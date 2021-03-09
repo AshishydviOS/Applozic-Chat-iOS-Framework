@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nQk-LM-enC">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -271,9 +270,12 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cri-hJ-XT9">
                                                     <rect key="frame" x="26" y="14" width="55" height="55"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Person Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-Lp-4Jd">
-                                                    <rect key="frame" x="100" y="33" width="209" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Person Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8h-Lp-4Jd">
+                                                    <rect key="frame" x="100" y="33" width="239" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="vkP-1T-UsL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -282,14 +284,13 @@
                                                 <constraint firstItem="Cri-hJ-XT9" firstAttribute="centerY" secondItem="yhR-xr-fbW" secondAttribute="centerY" id="5Rx-7U-aYq"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Cri-hJ-XT9" secondAttribute="bottom" constant="2" id="PH6-UB-DYj"/>
                                                 <constraint firstItem="H8h-Lp-4Jd" firstAttribute="leading" secondItem="yhR-xr-fbW" secondAttribute="trailing" constant="29" id="RZu-7b-ac1"/>
-                                                <constraint firstItem="H8h-Lp-4Jd" firstAttribute="centerY" secondItem="p0o-92-QNi" secondAttribute="centerY" id="VQZ-E4-0nn"/>
                                                 <constraint firstItem="yhR-xr-fbW" firstAttribute="top" secondItem="p0o-92-QNi" secondAttribute="topMargin" constant="13" id="YPa-lm-y5m"/>
                                                 <constraint firstItem="Cri-hJ-XT9" firstAttribute="centerX" secondItem="yhR-xr-fbW" secondAttribute="centerX" id="aqb-2M-FXu"/>
                                                 <constraint firstItem="Cri-hJ-XT9" firstAttribute="top" secondItem="p0o-92-QNi" secondAttribute="topMargin" constant="3" id="hrB-Y5-fZ6"/>
                                                 <constraint firstItem="H8h-Lp-4Jd" firstAttribute="leading" secondItem="Cri-hJ-XT9" secondAttribute="trailing" constant="19" id="lWB-6A-zwc"/>
                                                 <constraint firstItem="Cri-hJ-XT9" firstAttribute="leading" secondItem="p0o-92-QNi" secondAttribute="leadingMargin" constant="10" id="q1c-Yy-lRm"/>
                                                 <constraint firstItem="H8h-Lp-4Jd" firstAttribute="top" secondItem="p0o-92-QNi" secondAttribute="topMargin" constant="22" id="qSW-Dr-qNT"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="H8h-Lp-4Jd" secondAttribute="trailing" constant="50" id="rou-07-HZC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="H8h-Lp-4Jd" secondAttribute="trailing" constant="20" id="rou-07-HZC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
